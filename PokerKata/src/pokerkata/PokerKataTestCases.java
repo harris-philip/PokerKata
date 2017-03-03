@@ -16,25 +16,15 @@ public class PokerKataTestCases {
      */
     public static void main(String[] args) {
 
-        Hand sHWhite1 = new Hand("2C 3H 4S 8C AH");
-        Hand sHWhite2 = new Hand("2S 8S AS QS 3S");
-        Hand sHWhite3 = new Hand("2C 3H 4S 8C KH");
-        Hand sHWhite4 = new Hand("2D 3H 5C 9S KH");
+        Player white1 = new Player(new Hand("2C 3H 4S 8C AH"));
+        Player white2 = new Player(new Hand("2S 8S AS QS 3S"));
+        Player white3 = new Player(new Hand("2C 3H 4S 8C KH"));
+        Player white4 = new Player(new Hand("2D 3H 5C 9S KH"));
 
-        Hand sHBlack1 = new Hand("2H 3D 5S 9C KD");
-        Hand sHBlack2 = new Hand("2H 4S 4C 2D 4H");
-        Hand sHBlack3 = new Hand("2H 3D 5S 9C KD");
-        Hand sHBlack4 = new Hand("2H 3D 5S 9C KD");
-
-        Player white1 = new Player(sHWhite1);
-        Player white2 = new Player(sHWhite2);
-        Player white3 = new Player(sHWhite3);
-        Player white4 = new Player(sHWhite4);
-
-        Player black1 = new Player(sHBlack1);
-        Player black2 = new Player(sHBlack2);
-        Player black3 = new Player(sHBlack3);
-        Player black4 = new Player(sHBlack4);
+        Player black1 = new Player(new Hand("2H 3D 5S 9C KD"));
+        Player black2 = new Player(new Hand("2H 4S 4C 2D 4H"));
+        Player black3 = new Player(new Hand("2H 3D 5S 9C KD"));
+        Player black4 = new Player(new Hand("2H 3D 5S 9C KD"));
 
         winningHand(black1, white1);
         winningHand(black2, white2);
